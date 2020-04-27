@@ -13,8 +13,7 @@ function AccountStackscreen({navigation}) {
           name = "Account"
           component = {Account}
           options = {() => ({
-            title: '帳號設定',
-            headerTintColor: '#269192',   
+            headerShown: false 
           })}/>
       </Stack.Navigator>
     );
