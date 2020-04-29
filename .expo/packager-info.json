@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
@@ -7,3 +8,6 @@
   "packagerNgrokUrl": "https://packager.mj-y3c.anonymous.bubble-mid.exp.direct",
   "ngrokPid": 22696
 }
+=======
+{}
+>>>>>>> Stashed changes

@@ -3,6 +3,10 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
+<<<<<<< Updated upstream
   "urlRandomness": "mj-y3c",
+=======
+  "urlRandomness": null,
+>>>>>>> Stashed changes
   "https": false
 }
