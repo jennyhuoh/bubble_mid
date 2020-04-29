@@ -2,15 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-<<<<<<< HEAD
-  "packagerPid": 13818,
-  "expoServerNgrokUrl": "https://rj-wfc.anonymous.bubble-mid.exp.direct",
-  "packagerNgrokUrl": "https://packager.rj-wfc.anonymous.bubble-mid.exp.direct",
-  "ngrokPid": 13853
-=======
-  "packagerPid": 37476,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
->>>>>>> master
+  "packagerPid": 22678,
+  "expoServerNgrokUrl": "https://mj-y3c.anonymous.bubble-mid.exp.direct",
+  "packagerNgrokUrl": "https://packager.mj-y3c.anonymous.bubble-mid.exp.direct",
+  "ngrokPid": 22696
 }

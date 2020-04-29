@@ -1,16 +1,8 @@
 {
-<<<<<<< HEAD
   "hostType": "lan",
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "rj-wfc",
+  "urlRandomness": "mj-y3c",
   "https": false
-=======
-  "hostType": "tunnel",
-  "lanType": "ip",
-  "dev": true,
-  "minify": false,
-  "urlRandomness": "ka-ns5"
->>>>>>> master
 }
