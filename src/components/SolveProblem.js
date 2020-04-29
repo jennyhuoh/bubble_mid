@@ -1,9 +1,9 @@
 import React, {Component}from 'react';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 import { apisAreAvailable } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity, TextInput } from 'react-native-gesture-handler';
 
 const Stacksolve = createStackNavigator();
 
@@ -35,12 +35,28 @@ function SolveProblem_2 ({navigation, route}) {
                 </View>
             <View style = {styles.robotsay1box}><Text style = {styles.robotsay1}>哈囉！最近有哪些事情讓你煩惱呢？</Text></View> 
             <View style = {styles.q1}>
-            <View style = {styles.q1titlebg}><Text style = {styles.q1title}>最近感到煩悶的事情？</Text></View>
-            
+                <View style = {styles.q1box}>
+                    <View style = {styles.q1titlebg}><Text style = {styles.q1title}>最近感到煩悶的事情？</Text></View>
+                <View style = {styles.anssec1}>
+                    <Text style = {styles.num1}>1.</Text>
+                    <TextInput
+                          style={{ 
+                              height: 40,
+                              width: 200, 
+                              borderColor: '#378D8F', 
+                              borderBottomWidth: 1,
+                               }}
+                            placeholder = '輸入事件'
+                            placeholderTextColor = 'gray'
+                            clearTextOnFocus = {true}
+                      />
+                </View>
             <TouchableOpacity
                 onPress = {() => navigation.goBack()}>
                     <Text>back</Text>
             </TouchableOpacity>
+                
+                </View>            
             </View> 
         </View>
     );
@@ -54,8 +70,10 @@ const SolveProblem = () => {
                     name = "SolveProblem_1" 
                     component = {SolveProblem_1}
                     options = {() => ({
-                        headerShown: false 
-                      })}/>
+                        headerShown: false,
+                    })}
+                
+                      />
                 <Stacksolve.Screen 
                     name = "SolveProblem_2" 
                     component = {SolveProblem_2}
@@ -117,7 +135,30 @@ const styles = StyleSheet.create({
         height: 650
     },
     q1title: {
-        color: 'white'
+        color: 'white',
+        textAlign: 'center',
+        marginTop: 25
+    },
+    q1titlebg: {
+        backgroundColor: '#378D8F',
+        height: 65
+    },
+    q1box: {
+        backgroundColor: '#FAFAFA',
+        width: 300,
+        height: 420,
+        marginLeft: 37.5,
+        marginTop: 130
+    },
+    anssec1: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 45,
+        marginLeft: 40
+    },
+    num1: {
+        color: '#378D8F'
     }
   });
+
 export default SolveProblem;
