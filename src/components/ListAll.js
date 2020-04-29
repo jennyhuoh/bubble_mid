@@ -11,21 +11,38 @@ const ListAll = () => {
                 <Image style = {styles.eventbubble} source = {require('../img/img_eventbubble.png')}/>
             </View>
             <View style = {styles.shadows}>
-            <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
-            <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
-            <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
             </View>
             <View style = {styles.time}>
                 <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
                 <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
                 <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
             </View>
+            <View style = {styles.eventlist2}>
+                <Image style = {styles.eventbubble} source = {require('../img/img_eventbubble.png')}/>
+                <Image style = {styles.eventbubble} source = {require('../img/img_eventbubble.png')}/>
+                <Image style = {styles.eventbubble} source = {require('../img/img_eventbubble.png')}/>
+
+            </View>
+            <View style = {styles.shadows2}>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+                <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
+            </View>
+            <View style = {styles.time2}>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
+            </View>
             <Image style = {styles.water} source = {require('../img/img_waters.png')}/>
-            <Image style = {styles.imgbubble1} source = {require('../img/img_bubble1.png')}/>
-            <Image style = {styles.imgbubble2} source = {require('../img/img_bubble2.png')}/>
-            <Image style = {styles.imgbubble3} source = {require('../img/img_bubble3.png')}/>
-            <Image style = {styles.imgbubble4} source = {require('../img/img_bubble4.png')}/>
-            <Image style = {styles.imgbubble5} source = {require('../img/img_bubble5.png')}/>
+            <Image style = {styles.imgbubble1} source = {require('../img/img_bubble_new.png')}/>
+            <Image style = {styles.imgbubble2} source = {require('../img/img_bubble_new.png')}/>
+            <Image style = {styles.imgbubble3} source = {require('../img/img_bubble_new.png')}/>
+            <Image style = {styles.imgbubble4} source = {require('../img/img_bubble_new.png')}/>
+            <Image style = {styles.imgbubble5} source = {require('../img/img_bubble_new.png')}/>
+            
             <Image style = {styles.imgnet} source = {require('../img/img_net.png')}/>
         </View>
     );
@@ -37,67 +54,97 @@ const styles = StyleSheet.create({
         height: 600,
     },
     imgbubble1: {
-        resizeMode: 'contain',
-        width: 180,
-        position: 'absolute',
-        marginTop: 455,
-        marginLeft: 40
-    },
-    imgbubble2: {
-        resizeMode: 'contain',
-        width: 180,
-        position: 'absolute',
-        marginTop: 430,
-        marginLeft: 75
-    },
-    imgbubble3: {
-        resizeMode: 'contain',
-        width: 180,
-        position: 'absolute',
-        marginTop: 460,
-        marginLeft: 100
-    },
-    imgbubble4: {
-        resizeMode: 'contain',
-        width: 180,
-        position: 'absolute',
-        marginTop: 415,
-        marginLeft: 110
-    },
-    imgbubble5: {
-        resizeMode: 'contain',
-        width: 180,
+        // resizeMode: 'contain',
+        width: 15,
+        height: 16,
         position: 'absolute',
         marginTop: 440,
-        marginLeft: 135
+        marginLeft: 240
+    },
+    imgbubble2: {
+        // resizeMode: 'contain',
+        width: 25,
+        height: 26,
+        position: 'absolute',
+        marginTop: 429,
+        marginLeft: 168
+    },
+    imgbubble3: {
+        // resizeMode: 'contain',
+        width: 30,
+        height: 31,
+        position: 'absolute',
+        marginTop: 450,
+        marginLeft: 130
+    },
+    imgbubble4: {
+        // resizeMode: 'contain',
+        width: 30,
+        height: 31,
+        position: 'absolute',
+        marginTop: 456,
+        marginLeft: 190
+    },
+    imgbubble5: {
+        // resizeMode: 'contain',
+        width: 23,
+        height: 24,
+        position: 'absolute',
+        marginTop: 410,
+        marginLeft: 210
     },
     imgnet: {
         resizeMode: 'contain',
-        width: 180,
+        width: 290,
+        height:80,
         position: 'absolute',
-        marginTop: 480,
-        marginLeft: 130
+        marginTop: 490,
+        marginLeft: 90
     },
     eventlist: {
         flexDirection: 'row',
         marginLeft: 28,
-        marginTop: 40
+        marginTop: 40,
+        justifyContent:'space-around'
+    },
+    eventlist2: {
+        flexDirection: 'row',
+        marginLeft: 28,
+        paddingTop: 40,
+        justifyContent:'space-around'
     },
     eventbubble: {
-        marginRight: 10
+        resizeMode: 'contain',
+        width:100,
+        height:100,
+        marginRight: 25,
     },
     shadows: {
         flexDirection: 'row',
-        marginLeft: 47,
-        marginTop: 5
+        marginLeft: 25,
+        marginTop: 10,
+        justifyContent:'space-around'
+    },
+    shadows2: {
+        flexDirection: 'row',
+        marginLeft: 25,
+        paddingTop: 10,
+        justifyContent:'space-around'
     },
     bubbleshadow: {
-        marginRight: 50
+        marginRight: 22
     },
     time: {
         flexDirection: 'row',
-        marginLeft: 33,
-        marginTop: 20
+        marginLeft: 23,
+        marginTop: 15,
+        justifyContent:'space-around'
+    },
+    time2: {
+        flexDirection: 'row',
+        marginLeft: 23,
+        marginTop: 15,
+        justifyContent:'space-around'
     },
     times: {
         width: 90,
@@ -116,8 +163,11 @@ const styles = StyleSheet.create({
     },
     water: {
         position: 'absolute',
-        marginTop: 500,
-        marginLeft: -3
+        resizeMode: 'contain',
+        width:410,
+        height:300,
+        marginTop: 383,
+        
     }
   });
 
