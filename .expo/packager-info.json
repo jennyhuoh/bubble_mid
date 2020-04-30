@@ -1,4 +1,9 @@
 {
-  "packagerPort": null,
-  "packagerPid": null
+  "packagerPort": 19006,
+  "packagerPid": 69844,
+  "devToolsPort": 19005,
+  "expoServerPort": 19001,
+  "expoServerNgrokUrl": "https://fa-43t.anonymous.bubble-mid.exp.direct",
+  "packagerNgrokUrl": "https://packager.fa-43t.anonymous.bubble-mid.exp.direct",
+  "ngrokPid": 24820
 }

@@ -4,9 +4,11 @@ import { TouchableOpacity, TextInput } from 'react-native-gesture-handler';
 
 
 function AddMessage(props){
-    var chatbox = true;
-    var mychatbox = false;
-    if(chatbox)
+    var mychatbox=true;
+    var chatbox=false;
+    // const mychatbox = props.mychatbox;
+    // if(mychatbox)
+    if(mychatbox)
     return(
      <Image style = {styles.mychatbox} source = {require('../img/img_mychatbox.png')}/>
     )
@@ -49,9 +51,11 @@ const SolveProblem = () => {
                             />
                     </View>
                     <TouchableOpacity
-                        onPress = {() => {setModalVisible(!modalVisible) && chatbox==true}}>
+                        onPress = {() => {setModalVisible(!modalVisible) &&  <AddMessage mychatbox={true}/>}}>
                         <View style = {styles.q1confirmbg}><Text style = {styles.q1confirm}>確認</Text></View>
+                        
                     </TouchableOpacity>    
+                    
                     </View>            
              </View> 
             </Modal>
@@ -61,11 +65,12 @@ const SolveProblem = () => {
                     <Image style = {styles.chatbox} source = {require('../img/img_chatbox.png')}/>
                 </View>
                 <View style = {styles.robotsay1box}><Text style = {styles.robotsay1}>哈囉！最近有哪些事情讓你煩惱呢？</Text></View>   
-                <AddMessage/>
+                
                 <TouchableOpacity
                     onPress = {() => {setModalVisible(true)}}>
                     <View style = {styles.startanswerbg}><Text style = {styles.startanswer}>開始回答</Text></View>
                 </TouchableOpacity>
+                
             </View>
        
         </View>
@@ -95,6 +100,7 @@ const styles = StyleSheet.create({
         width:230,
         height:40,
         resizeMode: 'contain',
+        marginRight:100,
         marginTop: 100,
     },
     robotsay1box: {
