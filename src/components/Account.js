@@ -11,6 +11,7 @@ const Stackaccount = createStackNavigator();
 const Account = () => {
     return(
         <View style = {styles.accountbg}>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
          <Image style = {styles.bgphoto} source = {require('../img/img_bgphoto.png')}/>  
              <View style = {styles.info}>
@@ -26,6 +27,8 @@ const Account = () => {
             
          </View>
 =======
+=======
+>>>>>>> huoh
             <Image style = {styles.bgphoto} source = {require('../img/img_bgphoto.png')}/>  
             <View style = {styles.info}>
                 <View style = {styles.id}>
@@ -69,18 +72,14 @@ const Account = () => {
                     </View>
                 </TouchableHighlight>           
             </View>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> huoh
         </View>
     );
 }
 const styles = StyleSheet.create({
-    bgphoto:{
-       resizeMode: 'contain',
-       width:375,
-       height:272,
-       paddingTop:150,
-       marginLeft:0,
-    },
     accountbg: {
         backgroundColor: '#DEF1EF',
         height: 730
@@ -104,26 +103,29 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     photocircle: {
-        resizeMode: 'contain',
-        width:130,
-        height:130,
-        marginLeft: 0,
-        marginTop: 2,
+        marginLeft: 15,
+        marginTop: 20
     },
     selfphoto: {
         position: 'absolute',
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         width:100,
         height:100,
         marginLeft: 14,
         marginTop: 17
 =======
+=======
+>>>>>>> huoh
         marginLeft: 28,
         marginTop: 32,
         resizeMode: 'contain',
         width: 50,
         height: 50
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> huoh
     },
     idname: {
         color: '#269192',
