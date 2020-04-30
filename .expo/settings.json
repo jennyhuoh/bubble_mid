@@ -1,13 +1,8 @@
 {
   "dev": true,
   "minify": false,
-<<<<<<< HEAD
   "https": true,
   "hostType": "tunnel",
   "lanType": "ip",
-  "urlRandomness": "z5-fcp"
-=======
-  "urlRandomness": "ka-ns5",
-  "https": true
->>>>>>> yuhsuan
+  "urlRandomness": "q2-bt3"
 }

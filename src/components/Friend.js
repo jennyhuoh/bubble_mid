@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         width:100,
         height:100,
         marginTop:30,
-        marginLeft:30,
+        marginLeft:40,
     },
     friendbubble2: {
         resizeMode: 'contain',
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         width:100,
         height:100,
         marginTop:160,
-        marginLeft:30,
+        marginLeft:40,
     },
     friendbubble3: {
         resizeMode: 'contain',
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         width:100,
         height:100,
         marginTop:290,
-        marginLeft:30,
+        marginLeft:40,
     },
     tiffanyphoto:{
         resizeMode: 'contain',
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         marginTop:45,
-        marginLeft:45,
+        marginLeft:55,
     },
     vickyphoto:{
         resizeMode: 'contain',
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         marginTop:175,
-        marginLeft:45,
+        marginLeft:55,
     },
     candyphoto:{
         resizeMode: 'contain',
@@ -85,27 +85,27 @@ const styles = StyleSheet.create({
         width:70,
         height:70,
         marginTop:305,
-        marginLeft:45,
+        marginLeft:55,
     },
     friend1:{
         color: '#269C9B',
         fontSize:17,
         position: 'absolute',
-        paddingLeft:150,
+        paddingLeft:160,
         paddingTop:65,
     },
     friend2:{
         color: '#269C9B',
         fontSize:17,
         position: 'absolute',
-        paddingLeft:150,
+        paddingLeft:160,
         paddingTop:200,
     },
     friend3:{
         color: '#269C9B',
         fontSize:17,
         position: 'absolute',
-        paddingLeft:150,
+        paddingLeft:160,
         paddingTop:335,
     },
     chatbubble1:{
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:300,
+        marginLeft:335,
         marginTop:65,
     },
     chatbubble2:{
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:300,
+        marginLeft:335,
         marginTop:200,
     },
     chatbubble3:{
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:300,
+        marginLeft:335,
         marginTop:335,
     },
 
