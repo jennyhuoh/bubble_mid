@@ -14,7 +14,7 @@ const Account = () => {
              <View style = {styles.info}>
              <View style = {styles.id}>
                  <View style = {styles.images}>
-                 <Image style = {styles.photocircle} source = {require('../img/img_selfimgcircle.png')}/>
+                 <Image style = {styles.photocircle} source = {require('../img/img_bubble_new.png')}/>
                  <Image style = {styles.selfphoto} source = {require('../img/img_selfphoto.png')}/>
                  </View>
                  <View>
@@ -27,6 +27,13 @@ const Account = () => {
     );
 }
 const styles = StyleSheet.create({
+    bgphoto:{
+       resizeMode: 'contain',
+       width:375,
+       height:272,
+       paddingTop:150,
+       marginLeft:0,
+    },
     accountbg: {
         backgroundColor: '#DEF1EF',
         height: 730
@@ -44,13 +51,18 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     photocircle: {
-        marginLeft: 15,
-        marginTop: 20
+        resizeMode: 'contain',
+        width:130,
+        height:130,
+        marginLeft: 0,
+        marginTop: 2,
     },
     selfphoto: {
         position: 'absolute',
-        marginLeft: 28,
-        marginTop: 32
+        width:100,
+        height:100,
+        marginLeft: 14,
+        marginTop: 17
     },
     idname: {
         color: '#269192',
