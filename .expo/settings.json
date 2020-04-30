@@ -1,13 +1,8 @@
 {
+  "hostType": "lan",
+  "lanType": "ip",
   "dev": true,
   "minify": false,
-<<<<<<< HEAD
-  "https": true,
-  "hostType": "tunnel",
-  "lanType": "ip",
-  "urlRandomness": "q2-bt3"
-=======
-  "urlRandomness": "cb-4q4",
-  "https": true
->>>>>>> yuhsuan
+  "urlRandomness": null,
+  "https": false
 }
