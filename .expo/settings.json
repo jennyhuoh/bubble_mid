@@ -1,12 +1,8 @@
 {
-  "hostType": "lan",
-  "lanType": "ip",
   "dev": true,
   "minify": false,
-<<<<<<< Updated upstream
-  "urlRandomness": "mj-y3c",
-=======
-  "urlRandomness": null,
->>>>>>> Stashed changes
-  "https": false
+  "https": true,
+  "hostType": "tunnel",
+  "lanType": "ip",
+  "urlRandomness": "z5-fcp"
 }
