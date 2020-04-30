@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         width:410,
         height:300,
-        marginTop: 383,
+        marginTop: 399,
         
     }
   });

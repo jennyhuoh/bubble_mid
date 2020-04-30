@@ -3,6 +3,11 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
+<<<<<<< Updated upstream
   "urlRandomness": "y9-v8h",
   "https": true
+=======
+  "urlRandomness": "xb-q43",
+  "https": false
+>>>>>>> Stashed changes
 }
