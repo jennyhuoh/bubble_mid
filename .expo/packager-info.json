@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19002,
+  "devToolsPort": 19003,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 68076,
-  "expoServerNgrokUrl": "https://ka-ns5.anonymous.bubble-mid.exp.direct",
-  "packagerNgrokUrl": "https://packager.ka-ns5.anonymous.bubble-mid.exp.direct",
-  "ngrokPid": 1120
+  "packagerPort": 19004,
+  "packagerPid": 75056,
+  "expoServerNgrokUrl": "https://cb-4q4.anonymous.bubble-mid.exp.direct",
+  "packagerNgrokUrl": "https://packager.cb-4q4.anonymous.bubble-mid.exp.direct",
+  "ngrokPid": 8056
 }
