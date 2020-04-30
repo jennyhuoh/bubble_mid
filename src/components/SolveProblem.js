@@ -2,8 +2,28 @@ import React, {useState}from 'react';
 import { StyleSheet, Text, View, Image, Alert, Modal, TouchableHighlight} from 'react-native';
 import { TouchableOpacity, TextInput } from 'react-native-gesture-handler';
 
+
+function AddMessage(props){
+    var chatbox = true;
+    var mychatbox = false;
+    if(chatbox)
+    return(
+     <Image style = {styles.mychatbox} source = {require('../img/img_mychatbox.png')}/>
+    )
+    else{
+        return(
+            <Image style = {styles.chatface} source = {require('../img/img_chatface.png')}/> 
+            &&
+            <Image style = {styles.chatbox} source = {require('../img/img_chatbox.png')}/>
+        )
+    }
+    
+}
+
 const SolveProblem = () => {
+
     const [modalVisible, setModalVisible] = useState(false);
+    
     return(
         <View>
             <Modal
@@ -29,7 +49,7 @@ const SolveProblem = () => {
                             />
                     </View>
                     <TouchableOpacity
-                        onPress = {() => {setModalVisible(!modalVisible)}}>
+                        onPress = {() => {setModalVisible(!modalVisible) && chatbox==true}}>
                         <View style = {styles.q1confirmbg}><Text style = {styles.q1confirm}>確認</Text></View>
                     </TouchableOpacity>    
                     </View>            
@@ -41,6 +61,7 @@ const SolveProblem = () => {
                     <Image style = {styles.chatbox} source = {require('../img/img_chatbox.png')}/>
                 </View>
                 <View style = {styles.robotsay1box}><Text style = {styles.robotsay1}>哈囉！最近有哪些事情讓你煩惱呢？</Text></View>   
+                <AddMessage/>
                 <TouchableOpacity
                     onPress = {() => {setModalVisible(true)}}>
                     <View style = {styles.startanswerbg}><Text style = {styles.startanswer}>開始回答</Text></View>
@@ -61,11 +82,20 @@ const styles = StyleSheet.create({
         marginTop: 40,
     },
     chatface: {
+        resizeMode: 'contain',
+        width:50,
+        height:50,
         marginLeft: 20
     },
     chatbox: {
         width: 230,
         resizeMode: 'contain'  
+    },
+    mychatbox:{
+        width:230,
+        height:40,
+        resizeMode: 'contain',
+        marginTop: 100,
     },
     robotsay1box: {
         width: 180,
@@ -84,7 +114,7 @@ const styles = StyleSheet.create({
         height: 35,
         borderRadius: 20,
         marginLeft: 270,
-        marginTop: 460,
+        marginTop: 300,
         shadowOffset: {width: 1, height:1},
         shadowColor: 'black',
         shadowOpacity: 0.5
