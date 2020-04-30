@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:335,
+        marginLeft:340,
         marginTop:65,
     },
     chatbubble2:{
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:335,
+        marginLeft:340,
         marginTop:200,
     },
     chatbubble3:{
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         width:24,
         height:24,
         position: 'absolute',
-        marginLeft:335,
+        marginLeft:340,
         marginTop:335,
     },
 
