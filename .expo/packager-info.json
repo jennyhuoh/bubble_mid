@@ -1,9 +1,9 @@
 {
-  "packagerPort": 19009,
-  "packagerPid": 80076,
-  "devToolsPort": 19006,
-  "expoServerPort": 19001,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "packagerPort": 19005,
+  "packagerPid": 57012,
+  "devToolsPort": 19004,
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://ue-i2c.anonymous.bubble-mid.exp.direct",
+  "packagerNgrokUrl": "https://packager.ue-i2c.anonymous.bubble-mid.exp.direct",
+  "ngrokPid": 10868
 }

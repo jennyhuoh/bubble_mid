@@ -22,52 +22,15 @@ function AddMessage(props) {
 
 }
 
-function AddMessage(props){
-    var chatbox = true;
-    var mychatbox = false;
-    if(chatbox){
-    return(
-     <Image style = {styles.mychatbox} source = {require('../img/img_mychatbox.png')}/>
-    )
-    }
-    else{
-        <Image style = {styles.mychatbox1} source = {require('../img/img_mychatbox.png')}/>
-    }
-    // else{
-    //     return(
-    //         <Image style = {styles.chatface} source = {require('../img/img_chatface.png')}/> 
-    //         &&
-    //         <Image style = {styles.chatbox} source = {require('../img/img_chatbox.png')}/>
-    //     )
-    // }
-    
-}
-
 const SolveProblem = () => {
 
     const [modalVisible, setModalVisible] = useState(false);
 
-<<<<<<< Updated upstream
     const [text, setText] = useState('');
     const [messages, setMessages] = useState([]);
 
     return (
-=======
-    return(
->>>>>>> Stashed changes
         <View>
-            <View style = {styles.solvebg}>
-                <View style = {styles.robotarea}>
-                    <Image style = {styles.chatface} source = {require('../img/img_chatface.png')}/>
-                    <Image style = {styles.chatbox} source = {require('../img/img_chatbox.png')}/>
-                </View>
-                <View style = {styles.robotsay1box}><Text style = {styles.robotsay1}>哈囉！最近有哪些事情讓你煩惱呢？</Text></View>
-                <TouchableOpacity
-                    onPress = {() => {setModalVisible(true)}}>
-                    <View style = {styles.startanswerbg}><Text style = {styles.startanswer}>開始回答</Text></View>
-                </TouchableOpacity>
-
-            </View>
             <Modal
                 transparent={true}
                 visible={modalVisible}>
@@ -91,7 +54,6 @@ const SolveProblem = () => {
                                 clearTextOnFocus={true}
                             />
                         </View>
-<<<<<<< Updated upstream
                         <TouchableOpacity
                             onPress={() => {
                                 setModalVisible(!modalVisible);
@@ -101,7 +63,6 @@ const SolveProblem = () => {
                                     text
                                 ]);
                                 setText('');
-                            
                                 // AddMessage(true);
                             }}>
                             <View style={styles.q1confirmbg}><Text style={styles.q1confirm}>確認</Text></View>
@@ -116,14 +77,13 @@ const SolveProblem = () => {
                     <Image style={styles.chatface} source={require('../img/img_chatface.png')}/>
                     <Image style={styles.chatbox} source={require('../img/img_chatbox.png')}/>
                 </View>
-                <Image style={styles.mychatbox} source={require('../img/img_mychatbox.png')}/>
+                <Image style = {styles.mychatbox} source = {require('../img/img_mychatbox.png')}/>
                 <View style={styles.robotsay1box}><Text style={styles.robotsay1}>哈囉！最近有哪些事情讓你煩惱呢？</Text></View>
-              
+
                 {
-                     messages.map( (message, i) =>  <Text style={styles.event} key={i}> {message} </Text> )
-                     
+                    messages.map((message, i) => <Text style={styles.event} key={i}>{message}</Text>)
                 }
-               
+
                 <TouchableOpacity
                     onPress={() => {
                         setModalVisible(true)
@@ -133,18 +93,6 @@ const SolveProblem = () => {
 
             </View>
 
-=======
-                    <TouchableOpacity
-                        onPress = {() => {
-                            setModalVisible(!modalVisible)}}>
-                        <View style = {styles.q1confirmbg}><Text style = {styles.q1confirm}>確認</Text></View>
-                    </TouchableOpacity>
-                    </View>            
-                </View> 
-            </Modal>
-            <AddMessage chatbox = {null}/>
-       
->>>>>>> Stashed changes
         </View>
     );
 }
@@ -160,33 +108,24 @@ const styles = StyleSheet.create({
     },
     chatface: {
         resizeMode: 'contain',
-        width:50,
-        height:50,
+        width: 50,
+        height: 50,
         marginLeft: 20
     },
     chatbox: {
         width: 230,
-        resizeMode: 'contain'  
+        resizeMode: 'contain'
     },
-<<<<<<< Updated upstream
-    
-=======
-    mychatbox:{
-        width:230,
-        height:40,
+    mychatbox: {
+        width: 230,
+        height: 65,
         resizeMode: 'contain',
-        marginTop: 100,
-        position: 'absolute',
+        marginLeft: 195,
+        marginTop:10,
+        shadowOffset: {width: 1, height: 1},
+        shadowColor: 'black',
+        shadowOpacity: 0.5
     },
-    mychatbox1:{
-        width:230,
-        height:40,
-        resizeMode: 'contain',
-        marginTop: 100,
-        position: 'absolute',
-        display: 'none'
-    },
->>>>>>> Stashed changes
     robotsay1box: {
         width: 180,
         position: 'absolute',
@@ -203,21 +142,21 @@ const styles = StyleSheet.create({
         width: 85,
         height: 35,
         borderRadius: 20,
-        marginLeft: 270,
-        marginTop: 300,
-        shadowOffset: {width: 1, height:1},
+        marginLeft: 290,
+        marginTop: 340,
+        shadowOffset: {width: 1, height: 1},
         shadowColor: 'black',
         shadowOpacity: 0.5
     },
     startanswer: {
         color: 'white',
         paddingLeft: 14,
-        paddingTop: 9
+        paddingTop: 10
     },
     q1: {
         backgroundColor: 'rgba(0,0,0,0.5)',
         position: 'absolute',
-        width: 375,
+        width: 420,
         height: 815
     },
     q1title: {
@@ -233,8 +172,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#FAFAFA',
         width: 300,
         height: 420,
-        marginLeft: 37.5,
-        marginTop: 230
+        marginLeft: 55,
+        marginTop: 200
     },
     anssec1: {
         flexDirection: 'row',
@@ -244,7 +183,7 @@ const styles = StyleSheet.create({
     },
     num1: {
         color: '#378D8F',
-        fontSize: 14
+        fontSize: 14,
     },
     q1confirmbg: {
         backgroundColor: '#C4E1E7',
@@ -262,26 +201,12 @@ const styles = StyleSheet.create({
         paddingLeft: 29,
         paddingTop: 12
     },
-
     event:{
-        color:'#393939',
-        paddingLeft:300,
-        marginTop:150,
-        flexDirection:'column',
+        color: '#393939',
+        marginLeft:270,
+        marginTop:167,
         position:'absolute',
-
-    },
-    mychatbox:{
-        width:235,
-        height:60,
-        resizeMode: 'contain',
-        marginLeft:200,
-        paddingTop: 60,
-        shadowOffset: {width: 1, height:1},
-        shadowColor: 'black',
-        shadowOpacity: 0.5
-    },
-
-  });
+    }
+});
 
 export default SolveProblem;

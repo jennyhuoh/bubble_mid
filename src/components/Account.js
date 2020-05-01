@@ -11,24 +11,6 @@ const Stackaccount = createStackNavigator();
 const Account = () => {
     return(
         <View style = {styles.accountbg}>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-         <Image style = {styles.bgphoto} source = {require('../img/img_bgphoto.png')}/>  
-             <View style = {styles.info}>
-             <View style = {styles.id}>
-                 <View style = {styles.images}>
-                 <Image style = {styles.photocircle} source = {require('../img/img_bubble_new.png')}/>
-                 <Image style = {styles.selfphoto} source = {require('../img/img_selfphoto.png')}/>
-                 </View>
-                 <View>
-                     <Text style = {styles.idname}>Sherry Yang</Text>
-                 </View>
-             </View>
-            
-         </View>
-=======
-=======
->>>>>>> huoh
             <Image style = {styles.bgphoto} source = {require('../img/img_bgphoto.png')}/>  
             <View style = {styles.info}>
                 <View style = {styles.id}>
@@ -72,10 +54,6 @@ const Account = () => {
                     </View>
                 </TouchableHighlight>           
             </View>
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> huoh
         </View>
     );
 }
@@ -85,16 +63,17 @@ const styles = StyleSheet.create({
         height: 730
     },
     bgphoto: {
-        resizeMode: 'contain',
-        height: 285,
-        width: 375,
-        marginLeft: 0
+        // resizeMode: 'contain',
+        height: 250,
+        width: 412,
+        marginLeft: 0,
+        marginTop:20,
     },
     info: {
-        width: 350,
-        height: 430,
+        width: 370,
+        height: 400,
         backgroundColor: '#fff',
-        marginLeft: 12,
+        marginLeft: 20,
         shadowOffset: {width: 2, height: 3},
         shadowColor: 'black',
         shadowOpacity: 0.3
@@ -108,24 +87,15 @@ const styles = StyleSheet.create({
     },
     selfphoto: {
         position: 'absolute',
-<<<<<<< HEAD
-<<<<<<< Updated upstream
         width:100,
         height:100,
         marginLeft: 14,
-        marginTop: 17
-=======
-=======
->>>>>>> huoh
+        marginTop: 17,
         marginLeft: 28,
         marginTop: 32,
         resizeMode: 'contain',
         width: 50,
         height: 50
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> huoh
     },
     idname: {
         color: '#269192',
@@ -156,13 +126,13 @@ const styles = StyleSheet.create({
         color: '#393939'
     },
     accountright: {
-        marginLeft: 140
+        marginLeft: 160
     },
     accountright2: {
-        marginLeft: 168
+        marginLeft: 188
     },
     accountright3: {
-        marginLeft: 210
+        marginLeft: 230
     },
     touch: {
         marginTop: 25,

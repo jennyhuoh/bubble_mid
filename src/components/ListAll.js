@@ -17,8 +17,8 @@ const ListAll = () => {
             </View>
             <View style = {styles.time}>
                 <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
-                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
-                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|07</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|08</Text></View>
             </View>
             <View style = {styles.eventlist2}>
                 <Image style = {styles.eventbubble} source = {require('../img/img_eventbubble.png')}/>
@@ -32,9 +32,9 @@ const ListAll = () => {
                 <Image style = {styles.bubbleshadow} source = {require('../img/img_bubbleshadow.png')}/>
             </View>
             <View style = {styles.time2}>
-                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
-                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
-                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|05</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|09</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|10</Text></View>
+                <View style = {styles.timebg}><Text style = {styles.times}>2020|04|12</Text></View>
             </View>
             <Image style = {styles.water} source = {require('../img/img_waters.png')}/>
             <Image style = {styles.imgbubble1} source = {require('../img/img_bubble_new.png')}/>
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         width:410,
         height:300,
-        marginTop: 399,
+        marginTop: 385,
         
     }
   });

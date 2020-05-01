@@ -24,7 +24,7 @@ const List = () => {
                 indicatorStyle: {
                     backgroundColor: '#e0f3f1',
                     height: 50,
-                    width: 125,
+                    width: 137,
                     borderRadius: 7,
                     shadowOffset: {height: 1},
                     shadowColor: "black",

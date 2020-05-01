@@ -18,8 +18,10 @@ const App = () => {
       <Tab.Navigator
         tabBarOptions = {{
           activeTintColor: '#269C9B',
-          inactiveTintColor: '#676767'
-        }}>
+          inactiveTintColor: '#676767',
+         
+        }}
+        >
       <Tab.Screen name = "List"
         component = {ListStackscreen}
         options = {{
